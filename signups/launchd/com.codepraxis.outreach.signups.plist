@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.codepraxis.outreach.signups</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/path/to/outreach/signups/run.sh</string>
+  </array>
+  <key>WorkingDirectory</key><string>/path/to/outreach/signups</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key><string>/path/to/home</string>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+  <key>StartCalendarInterval</key>
+  <dict><key>Minute</key><integer>27</integer></dict>
+  <key>StandardOutPath</key><string>/path/to/outreach/signups/launchd/signups.out</string>
+  <key>StandardErrorPath</key><string>/path/to/outreach/signups/launchd/signups.err</string>
+</dict>
+</plist>

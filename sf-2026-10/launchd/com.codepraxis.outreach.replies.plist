@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/path/to/home</string>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+	</dict>
+	<key>Label</key>
+	<string>com.codepraxis.outreach.replies</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/path/to/outreach/sf-2026-10/run.sh</string>
+		<string>replies</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/path/to/outreach/sf-2026-10/launchd/replies.err</string>
+	<key>StandardOutPath</key>
+	<string>/path/to/outreach/sf-2026-10/launchd/replies.out</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Minute</key>
+			<integer>42</integer>
+		</dict>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/path/to/outreach/sf-2026-10</string>
+</dict>
+</plist>
